@@ -1,4 +1,4 @@
-var add = required('../src/add');
+var add = require('../src/add');
 
 QUnit.module('calculator');
 
