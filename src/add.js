@@ -9,6 +9,13 @@ for(let i = 0; i<numArr.length; i++){
     numArr[i] = parseInt(numArr[i], 10);
 }
 
+//negative number
+const negativeNums = numArr.filter(i=>i<0);
+
+if(negativeNums.length >0){
+    throw new Error(negativeNums);
+}
+
 let sum =0;
 for(let i=0; i<numArr.length; i++){
     sum = sum + numArr[i];
