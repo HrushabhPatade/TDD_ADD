@@ -21,7 +21,7 @@ function add(string) {
   }
 
   //negative number
-  const negativestring = numArr.filter((i) => i < 0);
+  const negativestring = numArr.filter((element) => element < 0);
 
   if (negativestring.length > 0) {
     throw new Error(negativestring);
