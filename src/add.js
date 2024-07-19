@@ -1,30 +1,30 @@
-function add(nums) {
-  if (nums == "") {
+function add(string) {
+  if (string == "") {
     return 0;
   }
 
   let delimiter = ",";
-  if (nums.startsWith("//")) {
-    const delimiterIndex = nums.indexOf("\n");
+  if (string.startsWith("//")) {
+    const delimiterIndex = string.indexOf("\n");
     if (delimiterIndex !== -1) {
-      delimiter = nums.substring(2, delimiterIndex).trim();
-      nums = nums.substring(delimiterIndex + 1);
+      delimiter = string.substring(2, delimiterIndex).trim();
+      string = string.substring(delimiterIndex + 1);
     }
   }
 
-  nums = nums.replace(new RegExp(`\n|${delimiter}`, "g"), ",");
-  console.log(nums);
-  const numArr = nums.split(",");
+  string = string.replace(new RegExp(`\n|${delimiter}`, "g"), ",");
+  console.log(string);
+  const numArr = string.split(",");
   //   return parseInt(numArr[0],10)+parseInt(numArr[1],10);
   for (let i = 0; i < numArr.length; i++) {
     numArr[i] = parseInt(numArr[i], 10);
   }
 
   //negative number
-  const negativeNums = numArr.filter((i) => i < 0);
+  const negativestring = numArr.filter((i) => i < 0);
 
-  if (negativeNums.length > 0) {
-    throw new Error(negativeNums);
+  if (negativestring.length > 0) {
+    throw new Error(negativestring);
   }
 
   let sum = 0;
