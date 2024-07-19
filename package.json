@@ -1,0 +1,14 @@
+{
+  "name": "tdd_add",
+  "version": "1.0.0",
+  "description": "\"TDD Method Project\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "qunit"
+  },
+  "author": "Hrushabh",
+  "license": "MIT",
+  "devDependencies": {
+    "qunit": "^2.21.0"
+  }
+}
