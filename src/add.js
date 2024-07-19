@@ -3,7 +3,15 @@ function add(nums) {
     return 0;
   }
 
-  nums = nums.replace(/;\n/g, ",");
+  let delimiter = ",";
+
+  const delimiterIndex = nums.indexOf("\n");
+  if (delimiterIndex !== -1) {
+    delimiter = nums.substring(2, delimiterIndex).trim();
+    nums = nums.substring(delimiterIndex + 1);
+  }
+
+  nums = nums.replace((`\n|${delimiter}`, "g"), ",");
 
   const numArr = nums.split(",");
   //   return parseInt(numArr[0],10)+parseInt(numArr[1],10);
