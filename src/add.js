@@ -11,7 +11,7 @@ function add(nums) {
     nums = nums.substring(delimiterIndex + 1);
   }
 
-  nums = nums.replace((`\n|${delimiter}`, "g"), ",");
+  nums = nums.replace(new RegExp(`\n|${delimiter}`, "g"), ",");
 
   const numArr = nums.split(",");
   //   return parseInt(numArr[0],10)+parseInt(numArr[1],10);
