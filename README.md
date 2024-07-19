@@ -29,7 +29,8 @@ A simple String Calculator to demonstrate Test-Driven Development (TDD) practice
 
   ```
 
-  
+
+  ```
 
 ## Installation
 
@@ -46,7 +47,7 @@ A simple String Calculator to demonstrate Test-Driven Development (TDD) practice
    npm install
    ```
 
-3. **Run Tests**
+3. **Run Tests**:
    ```sh
    npm test
    ```
@@ -60,7 +61,3 @@ The `add` function takes a string of numbers and returns their sum. The function
 ## License
 
 This project is licensed under the MIT License.
-
-```
-
-```
