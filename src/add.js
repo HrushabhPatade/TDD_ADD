@@ -3,7 +3,7 @@ function add(nums) {
     return 0;
   }
 
-  nums = nums.replace(/\n/g, ",");
+  nums = nums.replace(/;\n/g, ",");
 
   const numArr = nums.split(",");
   //   return parseInt(numArr[0],10)+parseInt(numArr[1],10);
