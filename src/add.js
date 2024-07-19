@@ -13,7 +13,7 @@ function add(nums) {
   }
 
   nums = nums.replace(new RegExp(`\n|${delimiter}`, "g"), ",");
-
+  console.log(nums);
   const numArr = nums.split(",");
   //   return parseInt(numArr[0],10)+parseInt(numArr[1],10);
   for (let i = 0; i < numArr.length; i++) {
