@@ -4,11 +4,12 @@ function add(nums) {
   }
 
   let delimiter = ",";
-
-  const delimiterIndex = nums.indexOf("\n");
-  if (delimiterIndex !== -1) {
-    delimiter = nums.substring(2, delimiterIndex).trim();
-    nums = nums.substring(delimiterIndex + 1);
+  if (nums.startsWith("//")) {
+    const delimiterIndex = nums.indexOf("\n");
+    if (delimiterIndex !== -1) {
+      delimiter = nums.substring(2, delimiterIndex).trim();
+      nums = nums.substring(delimiterIndex + 1);
+    }
   }
 
   nums = nums.replace(new RegExp(`\n|${delimiter}`, "g"), ",");

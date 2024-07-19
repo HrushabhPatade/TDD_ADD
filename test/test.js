@@ -9,5 +9,6 @@ QUnit.test("add", function (assert) {
   // assert.throws(()=>add("1,-3,4"), /-3/)
   // assert.throws(()=>add("-1,-3,-4"), /-1,-3,-4/)
   // assert.equal(add("1\n2,3"),6);
-  assert.equal(add("//;\n1;2"), 3);
+//   assert.equal(add("//;\n1;2"), 3);
+    assert.equal(add("//|\n1|2|3"), 6);
 });
