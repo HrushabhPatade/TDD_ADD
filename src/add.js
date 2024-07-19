@@ -1,5 +1,10 @@
-function add(x, y) {
-   return x+y;
+function add(nums) {
+
+    if(nums == ""){
+        return 0;
+    }
+
+
 }
 
 module.exports = add;
