@@ -1,6 +1,6 @@
 var add = require("../src/add");
 
-QUnit.module("calculator");
+QUnit.module("TDD_ADD");
 
 QUnit.test("add", function (assert) {
   assert.equal(add(""), 0);
