@@ -32,6 +32,7 @@ function add(string) {
     sum = sum + numArr[i];
   }
 
+  console.log(sum);
   return sum;
 }
 
