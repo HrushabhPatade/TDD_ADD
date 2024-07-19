@@ -4,7 +4,7 @@ function add(string) {
   }
 
   let delimiter = ",";
-  if (string.startsWith("//")) {
+  if (string.startsWith("/")) {
     const delimiterIndex = string.indexOf("\n");
     if (delimiterIndex !== -1) {
       delimiter = string.substring(2, delimiterIndex).trim();
